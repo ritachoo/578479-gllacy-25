@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>Gllacy Shop</title>
 </head>
 
@@ -44,7 +47,7 @@
             <span class="visually-hidden">Поиск</span>
           </a>
           <section class="modal modal-search">
-            <form name="search" method="get" action="#">
+            <form name="search" method="get" action="https://echo.htmlacademy.ru">
               <input type="search" name="search-text" placeholder="Что ищем?">
             </form>
           </section>
@@ -87,7 +90,7 @@
     <!-- Секция -->
     <!-- Секция -->
     <section class="features">
-      <h2 class="invisible-hidden">Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
       <ul class="features-list">
         <li class="features-item">
@@ -113,7 +116,7 @@
       </ul>
     </section>
     <section class="news-subscribe">
-      <h2 class="invisible-hidden">Новости и рассылка</h2>
+      <h2 class="visually-hidden">Новости и рассылка</h2>
       <article class="news">
         <h3>Новое в нашем блоге</h3>
         <a class="blog" href="#">
@@ -122,14 +125,17 @@
       </article>
       <div class="subscribe">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-        <!-- Форма -->
+        <form class="subscribe-form">
+          <input type="email" name="subscribe-email" placeholder="Электронная почта">
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </div>
     </section>
     <!-- Секция -->
   </main>
   <footer class="main-footer">
-    <div class="footer-social">
-      <ul>
+    <div>
+      <ul class="footer-social">
         <li>
           <a class="social-button" href="#">Твиттер</a>
         </li>
