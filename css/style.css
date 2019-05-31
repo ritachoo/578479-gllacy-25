@@ -35,6 +35,19 @@ a {
   cursor: pointer;
 }
 
+.main-header {
+  width: 1200px;
+  min-width: 940px;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+.main-navigation {
+  display: flex;
+  width: auto;
+  padding: 0;
+}
+
 .site-navigation,
 .user-navigation {
   color: #ffffff;
@@ -55,6 +68,66 @@ a {
   сolor: #ffbc9e;
 }
 
+.main-header-logo {
+  width: 156px;
+  align-self: flex-end;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  margin-left: 27px;
+}
+
+.site-navigation {
+  display: flex;
+  width: 385px;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.user-navigation {
+  display: flex;
+  width: 310px;
+  justify-content: space-around;
+  align-self: center;
+  margin-left: auto;
+}
+
+.catalog-navigation,
+.filled-cart {
+  display: none;
+}
+
+.schedule {
+  display: flex;
+  justify-content: flex-end;
+  right: 7px;
+  top: 37px;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  text-align: right;
+}
+
+.schedule-time {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.schedule-phone {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.container {
+  width: 1200px;
+  min-width: 940px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
 .features {
   margin: 0px;
   padding: 24px 20px;
@@ -67,15 +140,7 @@ a {
   background-size: auto;
 }
 
-.features-list {
-  list-style: none;
-}
-
-.feature-item {
-  text-align: left;
-}
-
-.feature-item h3 {
+.features h3 {
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -83,7 +148,21 @@ a {
   font-weight: 500;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.features-item {
+  width: 50%;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
 .news-subscribe {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 40px 0px;
 }
@@ -171,29 +250,6 @@ a {
   padding: 20px;
 }
 
-.schedule {
-  right: 7px;
-  top: 37px;
-  color: #ffffff;
-  display: block;
-  font-weight: 700;
-  text-align: right;
-}
-
-.schedule-time {
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 4px;
-}
-
-.schedule-phone {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 22px;
-  line-height: 24px;
-  margin-top: 5px;
-}
-
 .breadcrumbs,
 .breadcrumbs a {
   font-size: 14px;
@@ -203,6 +259,7 @@ a {
 }
 
 .breadcrumbs {
+  display: flex;
   margin-left: 0;
   padding-left: 0;
 }
@@ -211,13 +268,30 @@ a {
   list-style: none;
 }
 
+.breadcrumbs span {
+  margin-right: 5px;
+}
+
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
   color: #ffbc9e;
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0;
   list-style: none;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 267px;
+  min-height: 324px;
+  margin-bottom: 38px;
 }
 
 .catalog-item-image img {
@@ -257,7 +331,7 @@ a {
 
 .catalog-item a {
   color: #ffffff;
-  font-size: color: #ffffff;
+  font-size: 16px;
   font-weight: 400;
   cursor: pointer;
   display: block;
@@ -271,17 +345,15 @@ a {
 }
 
 .main-footer {
-  width: 1146px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
   margin: 0 auto;
   padding: 28px 0px 27px 0px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 14px;
   line-height: 18px;
-}
-
-.footer-social,
-.footer-info {
-  list-style: none;
 }
 
 .footer-info a,
@@ -296,6 +368,43 @@ a {
 .footer-copyright a:hover,
 .footer-copyright a:focus {
   color: #ffbc9e;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+.footer-info {
+  display: flex;
+}
+
+.footer-info .left {
+    position: relative;
+    margin: 0 30px 0 25px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-info .right {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-copyright {
+    width: 215px;
+  }
+
+.footer-copyright p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .social-button {
