@@ -86,9 +86,102 @@
   </header>
   <main class="container">
     <h1 class="visually-hidden">Gllacy Shop</h1>
-    <!-- Секция -->
-    <!-- Секция -->
-    <!-- Секция -->
+    <section class="slides">
+      <h2 class="visually-hidden">Наше мороженое</h2>
+      <div class="slides-switch">
+        <label for="products-1">Первый</label>
+        <label for="products-2">Второй</label>
+        <label for="products-3">Третий</label>
+      </div>
+      <ul class="slides-list">
+        <li class="slide-item" id="slide-1">
+          <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+          <a class="button slide-button" href="#">Давайте оба!</a>
+        </li>
+        <li class="slide-item" id="slide-2">
+          <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+          <a class="button slide-button" href="#">Давайте оба!</a>
+        </li>
+        <li class="slide-item" id="slide-3">
+          <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+          <a class="button slide-button" href="#">Давайте оба!</a>
+        </li>
+      </ul>
+    </section>
+    <section class="offers">
+      <h2 class="visually-hidden">Специальное предложение</h2>
+      <div class="offer-raspberries">
+        <p class="offer-title">Малинка даром!</p>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a href="#" class="button button-raspberries">Хочу варенье!</a>
+      </div>
+      <div class="offer-chocolate">
+        <p class="offer-title">Шоколадки даром!</p>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a href="#" class="button button-chocolate">Хочу шоколадки!</a>
+      </div>
+    </section>
+    <section class="top">
+      <h2 class="visually-hidden">Лучшие предложения</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <div class="top-item"></div>
+          <img class="catalog-item-image" src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <div class="catalog-item-price">
+            <span class="product-price">310 ₽</span>
+            <span class="product-weight">/кг</span>
+          </div>
+          <h3>
+            <a href="catalog-item.html">
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </a>
+          </h3>
+          <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+        </li>
+        <li class="catalog-item">
+          <div class="top-item"></div>
+          <img class="catalog-item-image" src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          <div class="catalog-item-price">
+            <span class="product-price">380 ₽</span>
+            <span class="product-weight">/кг</span>
+          </div>
+          <h3>
+            <a href="catalog-item.html">
+              Сливочно-кофейное с кусочками шоколада
+            </a>
+          </h3>
+          <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+        </li>
+        <li class="catalog-item">
+          <div class="top-item"></div>
+          <img class="catalog-item-image" src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <div class="catalog-item-price">
+            <span class="product-price">355 ₽</span>
+            <span class="product-weight">/кг</span>
+          </div>
+          <h3>
+            <a href="catalog-item.html">
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </a>
+          </h3>
+          <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+        </li>
+        <li class="catalog-item">
+          <div class="top-item"></div>
+          <img class="catalog-item-image" src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <div class="catalog-item-price">
+            <span class="product-price">415 ₽</span>
+            <span class="product-weight">/кг</span>
+          </div>
+          <h3>
+            <a href="catalog-item.html">
+              Сливочное крем-брюле с карамельной подливкой
+            </a>
+          </h3>
+          <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+        </li>
+      </ul>
+    </section>
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
@@ -131,7 +224,21 @@
         </form>
       </div>
     </section>
-    <!-- Секция -->
+    <section class="map-contacts">
+      <div class="map">
+        <h3 class="visually-hidden">Магазин на карте</h3>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A81d2799c6c0dcff351909983c57b99eb193c17cf6333e06246b9606a64720ae5&amp;source=constructor" width="1200" height="430" frameborder="0"></iframe>
+        <div class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="contacts-text">Для заказов по телефону:</p>
+          <p class="contacts-phone">8 812 450-25-25</p>
+          <p class="contacts-text">(с 10 до 20 ежедневно)</p>
+          <button type="button" class="button button-feedback" name="feedback">Форма обратной связи</button>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div>
@@ -152,21 +259,21 @@
     </div>
     <div class="footer-info">
       <ul class="left">
-      <li>
-        <a href="#">Для поставщиков</a>
-      </li>
-      <li>
-        <a href="#">Наши документы</a>
-      </li>
-    </ul>
-    <ul class="right">
-      <li>
-        <a href="#">О производстве</a>
-      </li>
-      <li>
-        <a href="#">Экологические стандарты</a>
-      </li>
-    </ul>
+        <li>
+          <a href="#">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="#">Наши документы</a>
+        </li>
+      </ul>
+      <ul class="right">
+        <li>
+          <a href="#">О производстве</a>
+        </li>
+        <li>
+          <a href="#">Экологические стандарты</a>
+        </li>
+      </ul>
     </div>
     <div class="footer-copyright">
       <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
