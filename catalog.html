@@ -13,12 +13,12 @@
   <div class="site-wrapper-catalog">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
         </a>
         <ul class="site-navigation">
           <li>
-            <a class="navigation-active" href="catalog.html">Каталог</a>
+            <a class="site-navigation-button navigation-active" href="catalog.html">Каталог</a>
             <ul class="catalog-navigation">
               <li class="catalog-navigation-title">Новинки</li>
               <li class="catalog-navigation-item">
@@ -36,10 +36,10 @@
             </ul>
           </li>
           <li>
-            <a href="shipping-payment.html">Доставка и оплата</a>
+            <a class="site-navigation-button" href="shipping-payment.html">Доставка и оплата</a>
           </li>
           <li>
-            <a href="info.html">О Компании</a>
+            <a class="site-navigation-button" href="info.html">О Компании</a>
           </li>
         </ul>
         <ul class="user-navigation filled-cart-navigation">
@@ -126,6 +126,9 @@
               <option value="high-price">сначала дорогие</option>
               <option value="fat">по жирности</option>
             </select>
+            <span class="down">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#fff" d="M5.5 10L0 0h11"/></svg>
+            </span>
           </div>
         </fieldset>
         <fieldset class="filter-price">
@@ -153,19 +156,19 @@
           <div class="filter-background">
             <div class="filter-fat-radio">
               <label class="filter-fat-item">
-                <input type="radio" name="fat" value="0">
+                <input class="fat-radio" type="radio" name="fat" value="0">
                 <span class="fat-value">0%</span>
               </label>
               <label class="filter-fat-item">
-                <input type="radio" name="fat" value="under-10" checked>
+                <input class="fat-radio" type="radio" name="fat" value="under-10" checked>
                 <span class="fat-value">до 10%</span>
               </label>
               <label class="filter-fat-item">
-                <input type="radio" name="fat" value="under-30">
+                <input class="fat-radio" type="radio" name="fat" value="under-30">
                 <span class="fat-value">до 30%</span>
               </label>
               <label class="filter-fat-item">
-                <input type="radio" name="fat" value="over-30">
+                <input class="fat-radio" type="radio" name="fat" value="over-30">
                 <span class="fat-value">выше 30%</span>
               </label>
             </div>
@@ -176,23 +179,23 @@
           <div class="filter-background">
             <div class="filter-toppings-checkbox">
               <label class="filter-toppings-item">
-                <input type="checkbox" name="topping" value="chocolate" checked>
+                <input class="topping-checkbox" type="checkbox" name="topping" value="chocolate" checked>
                 <span class="topping-value">шоколадные</span>
               </label>
               <label class="filter-toppings-item">
-                <input type="checkbox" name="topping" value="sugar" checked>
+                <input class="topping-checkbox" type="checkbox" name="topping" value="sugar" checked>
                 <span class="topping-value">сахарные присыпки</span>
               </label>
               <label class="filter-toppings-item">
-                <input type="checkbox" name="topping" value="fruits">
+                <input class="topping-checkbox" type="checkbox" name="topping" value="fruits">
                 <span class="topping-value">фрукты</span>
               </label>
               <label class="filter-toppings-item">
-                <input type="checkbox" name="topping" value="syrups">
+                <input class="topping-checkbox" type="checkbox" name="topping" value="syrups">
                 <span class="topping-value">сиропы</span>
               </label>
               <label class="filter-toppings-item">
-                <input type="checkbox" name="topping" value="jams">
+                <input class="topping-checkbox" type="checkbox" name="topping" value="jams">
                 <span class="topping-value">джемы</span>
               </label>
             </div>
@@ -363,13 +366,17 @@
           </li>
         </ul>
         <div class="pagination">
-          <a class="previous-page disabled"></a>
+          <a class="previous-page disabled">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewbox="0 0 8 12"><path fill="#cecece" transform="rotate(540 3.73923 5.99133)" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"></path></svg>
+          </a>
           <a class="page active-page">1</a>
           <a class="page" href="#">2</a>
           <a class="page" href="#">3</a>
           <a class="page" href="#">4</a>
           <a class="page" href="#">5</a>
-          <a class="next-page" href="#"></a>
+          <a class="next-page" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewbox="0 0 8 12"><path fill="#fff" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"></path></svg>
+          </a>
         </div>
       </section>
     </main>
