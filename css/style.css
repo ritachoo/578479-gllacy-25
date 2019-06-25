@@ -998,6 +998,10 @@ ul {
   cursor: pointer;
 }
 
+.select::-ms-expand {
+    display: none;
+}
+
 .select:hover,
 .select option:hover {
   color: #323232;
@@ -1461,6 +1465,11 @@ ul {
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+
+.contacts-text,
+.contacts-address {
+  width: 100%;
 }
 
 .button-feedback {
