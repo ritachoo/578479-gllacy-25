@@ -16,12 +16,12 @@
   <div class="site-wrapper">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
         </a>
         <ul class="site-navigation">
-          <li>
-            <a href="catalog.html">Каталог</a>
+          <li class="site-navigation-inactive">
+            <a class="site-navigation-button" href="catalog.html">Каталог</a>
             <ul class="catalog-navigation">
               <li class="catalog-navigation-title">Новинки</li>
               <li class="catalog-navigation-item">
@@ -39,10 +39,10 @@
             </ul>
           </li>
           <li>
-            <a href="shipping-payment.html">Доставка и оплата</a>
+            <a class="site-navigation-button" href="shipping-payment.html">Доставка и оплата</a>
           </li>
           <li>
-            <a href="info.html">О Компании</a>
+            <a class="site-navigation-button" href="info.html">О Компании</a>
           </li>
         </ul>
         <ul class="user-navigation">
@@ -51,9 +51,9 @@
               <span class="visually-hidden">Поиск</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewbox="0 0 17 17">
                 <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
-                </svg>
+              </svg>
             </a>
-            <section class="modal modal-search">
+            <section class="modal-search">
               <form name="search" method="get" action="https://echo.htmlacademy.ru">
                 <input type="search" name="search-text" placeholder="Что ищем?">
               </form>
@@ -69,22 +69,24 @@
               </svg>
               <span>Вход</span>
             </a>
-            <section class="modal modal-login">
+            <section class="modal-login">
               <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
                 <p class="login-item">
-                  <label for="login-email" class="visible-hidden">Электронная почта</label>
+                  <label for="login-email" class="visually-hidden">Электронная почта</label>
                   <input type="email" name="login-email" id="login-email" placeholder="Электронная почта">
                 </p>
                 <p class="login-item">
-                  <label for="login-password" class="visible-hidden">Пароль</label>
+                  <label for="login-password" class="visually-hidden">Пароль</label>
                   <input type="password" name="login-password" id="login-password" placeholder="Пароль">
                 </p>
-                <button class="button" type="submit">
-                  Войти
-                </button>
-                <div class="login-user-info">
-                  <a class="login-restore" href="#">Забыли пароль?</a>
-                  <a class="login-new-user" href="#">Новая регистрация</a>
+                <div class="login-enter">
+                  <button class="button button-login" type="submit">
+                    Войти
+                  </button>
+                  <div class="login-user-info">
+                    <a class="login-restore" href="#">Забыли пароль?</a>
+                    <a class="login-new-user" href="#">Новая регистрация</a>
+                  </div>
                 </div>
               </form>
             </section>
@@ -160,7 +162,7 @@
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
             </h3>
-            <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+            <button type="button" class="button button-fast-view" name="fast-view">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <div class="top-item"></div>
@@ -174,7 +176,7 @@
                 Сливочно-кофейное с кусочками шоколада
               </a>
             </h3>
-            <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+            <button type="button" class="button button-fast-view" name="fast-view">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <div class="top-item"></div>
@@ -188,7 +190,7 @@
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
             </h3>
-            <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+            <button type="button" class="button button-fast-view" name="fast-view">Быстрый просмотр</button>
           </li>
           <li class="catalog-item">
             <div class="top-item"></div>
@@ -202,7 +204,7 @@
                 Сливочное крем-брюле с карамельной подливкой
               </a>
             </h3>
-            <button type="button" class="button button-fast-view" name="fast-view"> Быстрый просмотр</button>
+            <button type="button" class="button button-fast-view" name="fast-view">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
@@ -340,23 +342,27 @@
       </div>
     </footer>
   </div>
-</body>
-<div>
-  <section class="modal modal-feedback">
+
+  <div class="feedback-window">
+  <section class="modal-feedback">
     <h2>Мы обязательно вам ответим!</h2>
     <form class="feedback" name="feedback" method="post" action="https://echo.htmlacademy.ru">
       <p class="feedback-item">
-        <label for="feedback-name" class="visible-hidden">Как вас зовут?</label>
+        <label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
         <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
       </p>
       <p class="feedback-item">
-        <label for="feedback-email" class="visible-hidden"> Ваша почта для ответа?</label>
+        <label for="feedback-email" class="visually-hidden"> Ваша почта для ответа?</label>
         <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
       </p>
-      <textarea name="feedback-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
-      <button class="button" type="submit">Отправить</button>
+      <textarea name="feedback-text" rows="6" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="button button-modal-feedback" type="submit">Отправить</button>
     </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </div>
+<script src="js/feedback-script.js"></script>
+
+</body>
 
 </html>
