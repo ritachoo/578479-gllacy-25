@@ -1475,6 +1475,10 @@ a {
   height: 430px;
 }
 
+.map iframe {
+  border: none;
+}
+
 .contacts {
   position: absolute;
   display: flex;
