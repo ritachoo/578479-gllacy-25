@@ -163,7 +163,7 @@ a {
 .site-navigation-button:not(.navigation-active)::after {
   content: "";
   display: block;
-  margin-top: -4px;
+  margin-top: -3px;
   border-bottom: 1px solid #adbdb4;
 }
 
@@ -188,19 +188,24 @@ a {
   font-weight: 700;
 }
 
-.site-navigation li:hover .catalog-navigation {
+.site-navigation li:hover .catalog-navigation-container {
   display: block;
 }
 
-.catalog-navigation {
+.catalog-navigation-container {
   position: absolute;
+  width: 143px;
+  top: 32px;
+  padding-top: 4px;
+  display: none;
+  z-index: 15;
+}
+
+.catalog-navigation {
   width: 143px;
   margin: 0;
   padding: 0;
   padding-bottom: 3px;
-  top: 35px;
-  z-index: 2;
-  display: none;
   border-radius: 5px;
   background-color: #f8f7f4;
   list-style: none;
@@ -285,7 +290,7 @@ a {
 .user-login,
 .user-cart {
   position: relative;
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
 }
 
 .user-search:hover .modal-search {
@@ -329,13 +334,17 @@ a {
 .modal-search {
   position: absolute;
   right: 0;
-  top: 35px;
+  top: 31px;
   display: none;
   margin: 0;
+  padding-top: 5px;
+  z-index: 15;
+}
+
+.modal-search form {
   padding: 20px 15px;
   border-radius: 5px;
   background-color: #f8f7f4;
-  z-index: 3;
 }
 
 .modal-search input {
@@ -363,12 +372,16 @@ a {
   position: absolute;
   display: none;
   right: -3px;
-  top: 36px;
+  top: 32px;
   margin: 0;
+  padding-top: 4px;
+  z-index: 15;
+}
+
+.modal-login form {
   padding: 20px;
   border-radius: 5px;
   background: #f8f7f4;
-  z-index: 3;
 }
 
 .user-login:hover .modal-login {
@@ -451,9 +464,14 @@ a {
 .filled-cart {
   position: absolute;
   display: none;
-  top: 36px;
-  right: 0px;
-  z-index: 5;
+  top: 31px;
+  right: 30px;
+  width: 510px;
+  padding-top: 5px;
+  z-index: 15;
+}
+
+.filled-cart-form {
   width: 510px;
   color: #323232;
   padding: 20px 15px;
