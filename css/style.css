@@ -1557,9 +1557,11 @@ a {
 }
 
 .button-feedback {
+  font-size: 18px;
+  width: 195px;
   border: none;
   align-self: flex-end;
-  padding: 12px 37px;
+  padding: 12px 27px;
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 0;
